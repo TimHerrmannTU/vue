@@ -1,12 +1,12 @@
 <script setup>
+// vue meta
 import platSVG from "./icons/IconPlat.vue"
 defineProps({
   riven: {type: Object}
 })
 </script>
-
 <template>
-  <div class="riven-card" @click="open_details(this)">
+  <div class="riven-card" @click="open_details">
     <div class="header">
       <h3 class="name">
         {{riven.weapon}}<br>{{riven.name}}
